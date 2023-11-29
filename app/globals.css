@@ -17,11 +17,17 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #F9FAFB;
 }
+
+.heading{
+  @apply font-[600] text-[20px] text-center md:text-[44px]
+}
+.secondHeading{
+  @apply text-center font-[600] text-[16px] md:text-[20px]
+}
+
+.content{
+  @apply text-center font-[400] text-[14px] md:text-[20px]
+}
+
