@@ -86,7 +86,7 @@ const HomePage = () => {
             <div className='header hidden md:flex justify-center mt-14 '>
                 {features.map((feature, index)=>{
                     return(
-                        <div className='bg-white w-20 text-xs text-center mx-6'>
+                        <div className='bg-white w-20 text-xs text-center mx-6' key={index}>
                             {feature}
                         </div>
                     )

@@ -93,7 +93,7 @@ const Footer = () => {
                     <div className='font-400] text-[14px] leading-10'>
                         {ourLinks.map((link, index)=>{
                             return(
-                                <div>
+                                <div key={index}>
                                     <Link href={link.link} className='hover:text-blue-700' target='__blank'>{link.title}</Link>
                                 </div>
                             )
@@ -105,7 +105,7 @@ const Footer = () => {
                     <div className='font-[400] text-[14px] leading-10 '>
                         {Services.map((service,index)=>{
                             return(
-                                <div>
+                                <div key={index}>
                                     <Link href={service.link} className='hover:text-blue-700' target='__blank'>{service.title}</Link>
                                 </div>
                             )
@@ -118,7 +118,7 @@ const Footer = () => {
                     <div className='font-400] text-[14px] leading-10'>
                         {otherLinks.map((link,index)=>{
                             return(
-                                <div>
+                                <div key={index}>
                                     <Link href={link.link} className='hover:text-blue-700' target='__blank'>{link.title}</Link>
                                 </div>
                             )
@@ -131,7 +131,7 @@ const Footer = () => {
                 <div className='font-400] text-[14px] leading-10'>
                 {Services.map((service,index)=>{
                     return(
-                        <div>
+                        <div key={index}>
                             <Link href={service.link} className='hover:text-blue-700' target='__blank'>{service.title}</Link>
                         </div>
                     )

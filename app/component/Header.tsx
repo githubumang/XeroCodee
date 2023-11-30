@@ -34,7 +34,7 @@ const Header = () => {
         <div className='md:flex mt-2  mx-auto hidden md:visible'>
             {Navbars.map((Navbar, index)=>{
                 return(
-                    <Link href={Navbar.link} className='mx-3' target='__blank'>
+                    <Link href={Navbar.link} className='mx-3' target='__blank' key={index}>
                         {Navbar.title}
                     </Link>
                 )
@@ -52,7 +52,7 @@ const Header = () => {
                 <div className=''>
                     {Navbars.map((Navbar, index)=>{
                         return(
-                            <div className=''>
+                            <div className='' key={index}>
                             <Link href={Navbar.link} target='__blank'>
                                 {Navbar.title}
                             </Link>
